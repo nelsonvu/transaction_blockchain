@@ -6,9 +6,6 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    nickname: {
-        type: String
-    },
     email: {
         type: String,
         required: true
@@ -16,9 +13,6 @@ const UserSchema = new Schema({
     password: {
         type: String,
         required: true
-    },
-    phone: {
-        type: String
     },
     status: {   
         type: String,
@@ -35,6 +29,14 @@ const UserSchema = new Schema({
     },
     fcmToken: {
         type: String
+    },
+    wallet: {
+        address: {
+            type: String
+        },
+        privateKey: {
+            type: String
+        }
     }
 })
 
